@@ -65,7 +65,7 @@ return array(
 	|
 	*/
 
-	'key' => 'M5MmwUTUeEzCPzyqQ8e2Cg6O9D8Xdy11',
+	'key' => 'L39WxF31mTraFTN7VHvPVl4NqMHu6TwW',
 
 	/*
 	|--------------------------------------------------------------------------

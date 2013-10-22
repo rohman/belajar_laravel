@@ -1,16 +1,18 @@
 <?php
 class Author extends Eloquent
 {
-	protected $table = 'authors';
+
 	protected $fillable = array('name', 'bio');
+	protected $table = 'authors';
 	
 	public static $rules = array(
 		'name' => 'required|min:2',
-		'bio' => 'required|min:10',
+		'bio' => 'required|min:10'
 	);
 	
-	public static function validation($data)
+	public static function validate($data)
 	{
 		return Validator::make($data, static::$rules);
 	}
+
 }
