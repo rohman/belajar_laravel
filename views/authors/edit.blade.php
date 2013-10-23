@@ -1,7 +1,7 @@
 @extends('layouts.default')
 
 @section('content')
-	<h1>Edit Author {{$author->name}}</h1>
+	<h1>Edit Author {{ e($author->name ) }}</h1>
 	@include('common.author_errors')
 	
 	{{Form::open(array('url' => 'authors/update', 'method' => 'PUT'))}}

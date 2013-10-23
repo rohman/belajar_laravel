@@ -70,7 +70,13 @@ class AuthorsController extends BaseController
 			// ));
 			return Redirect::route('authors')->with('message', 'Author Success Update');
 		}
-		
+	}
+	
+	public function postDestroy()
+	{
+		//echo Input::get('id');exit;
+		Author::find(Input::get('id'))->delete();
+		return Redirect::route('authors')->with('message', 'Author Was Deleted');
 	}
 
 }
